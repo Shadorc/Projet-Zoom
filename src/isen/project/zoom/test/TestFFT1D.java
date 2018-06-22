@@ -21,13 +21,13 @@ public class TestFFT1D
 		if (MatrixUtils.equalsArray(fft1d.fft1d(testSignal), result))
 		{
 			System.out.println("Test fft1D : ok");
-			System.out.println("Signal test: " + Arrays.toString(testSignal));
-			System.out.println("Résultat: " + Arrays.toString(result));
 		}
 		else
 		{
-			System.err.println("Test fft1D : erreur");
+			System.out.println("Test fft1D : erreur");
 		}
+		System.out.println("Signal test: " + Arrays.toString(testSignal));
+		System.out.println("Résultat: " + Arrays.toString(result));
 	}
 
 	public static void testReverseFft1d()
@@ -41,12 +41,12 @@ public class TestFFT1D
 		if (MatrixUtils.equalsArray(result, testSignal))
 		{
 			System.out.println("Test reverse fft1D : ok");
-			System.out.println("Signal test: " + Arrays.toString(testSignal));
-			System.out.println("Résultat: " + Arrays.toString(result));
 		}
 		else
 		{
-			System.err.println("Test reverse fft1D : erreur");
+			System.out.println("Test reverse fft1D : erreur");
 		}
+		System.out.println("Signal test: " + Arrays.toString(testSignal));
+		System.out.println("Résultat: " + Arrays.toString(result));
 	}
 }

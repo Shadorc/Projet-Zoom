@@ -56,8 +56,7 @@ public class FFT1D
 		final int length = reverseFft.length;
 		for (int i = 0; i < length; i++)
 		{
-			reverseFft[i] = new Complex(reverseFft[i].getReal() / length,
-					reverseFft[i].getImaginary() / length);
+			reverseFft[i] = new Complex(reverseFft[i].getReal() / length, reverseFft[i].getImaginary() / length);
 		}
 		return reverseFft;
 	}

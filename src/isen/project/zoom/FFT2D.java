@@ -5,11 +5,6 @@ import isen.project.zoom.utility.MatrixUtils;
 
 public class FFT2D extends FFT1D
 {
-	public FFT2D()
-	{
-		super();
-	}
-
 	/**
 	 * @return Une matrice de même dimension que le signal contenant la transformée
 	 *         de Fourier de tous les coefficients du signal

@@ -17,15 +17,15 @@ public class TestMatrixUtils
 		if (MatrixUtils.equalsMatrix(MatrixUtils.transpose(testMatrix), result))
 		{
 			System.out.println("Test transpose : ok");
-			System.out.println("Matrice test: ");
-			MatrixUtils.printMatrix(testMatrix);
-			System.out.println("Résultat: ");
-			MatrixUtils.printMatrix(MatrixUtils.transpose(testMatrix));
 		}
 		else
 		{
-			System.err.println("Test transpose : erreur");
+			System.out.println("Test transpose : erreur");
 		}
+		System.out.println("Matrice test: ");
+		MatrixUtils.printMatrix(testMatrix);
+		System.out.println("Résultat: ");
+		MatrixUtils.printMatrix(MatrixUtils.transpose(testMatrix));
 	}
 
 	public static void testArrayEquals()
@@ -38,7 +38,7 @@ public class TestMatrixUtils
 		}
 		else
 		{
-			System.err.println("Test array equals : erreur");
+			System.out.println("Test array equals : erreur");
 		}
 	}
 
@@ -52,7 +52,7 @@ public class TestMatrixUtils
 		}
 		else
 		{
-			System.err.println("Test matrix equals : erreur");
+			System.out.println("Test matrix equals : erreur");
 		}
 	}
 

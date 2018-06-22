@@ -17,8 +17,11 @@ public class FFTCplx
 		}
 
 		FFT2D fft2d = new FFT2D();
+		// Applique la transformée de Fourier à 2 dimensions sur imageZoomee
 		Complex[][] fft2dMatrix = fft2d.fft2d(imageZoomee);
+		// Applique le zeroPadding sur fftd2dMatrix
 		Complex[][] paddedMatrix = new ZeroPadding(facteur).zeroPadding(fft2dMatrix);
+		// Applique la transformée de Fourier inverse à paddedMatrix
 		Complex[][] reversedMatrix = fft2d.reverseFft2d(paddedMatrix);
 
 		// Multiplie les amplitudes par le facteur au carré pour obtenir l'amplitude

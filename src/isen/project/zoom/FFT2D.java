@@ -9,9 +9,10 @@ public class FFT2D extends FFT1D
 	{
 		super();
 	}
-	
+
 	/**
-	 * @return Une matrice de même dimension que le signal contenant la transformée de Fourier de tous les coefficients du signal
+	 * @return Une matrice de mÃªme dimension que le signal contenant la transformÃ©e
+	 *         de Fourier de tous les coefficients du signal
 	 */
 	public Complex[][] fft2d(Complex[][] signal)
 	{
@@ -20,7 +21,7 @@ public class FFT2D extends FFT1D
 		{
 			fftLine[i] = fft1d(signal[i]);
 		}
-		
+
 		Complex[][] fftTransposed = MatrixUtils.transpose(fftLine);
 		Complex[][] fftColumn = new Complex[fftTransposed.length][fftTransposed[0].length];
 		for (int j = 0; j < fftTransposed.length; j++)
@@ -29,9 +30,10 @@ public class FFT2D extends FFT1D
 		}
 		return MatrixUtils.transpose(fftColumn);
 	}
-	
+
 	/**
-	 * @return Une matrice de même dimension que le signal contenant la transformée de Fourier inverse de tous les coefficients du signal
+	 * @return Une matrice de mÃªme dimension que le signal contenant la transformÃ©e
+	 *         de Fourier inverse de tous les coefficients du signal
 	 */
 	public Complex[][] reverseFft2d(Complex[][] signal)
 	{
@@ -40,7 +42,7 @@ public class FFT2D extends FFT1D
 		{
 			fftLine[i] = reverseFft1d(signal[i]);
 		}
-		
+
 		Complex[][] fftTransposed = MatrixUtils.transpose(fftLine);
 		Complex[][] fftColumn = new Complex[fftTransposed.length][fftTransposed[0].length];
 		for (int j = 0; j < fftTransposed.length; j++)
@@ -49,5 +51,5 @@ public class FFT2D extends FFT1D
 		}
 		return MatrixUtils.transpose(fftColumn);
 	}
-	
+
 }

@@ -1,14 +1,14 @@
 package isen.project.zoom.test;
 
-public class MainTest 
+public class MainTest
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		System.out.println("Test de la classe Complex:");
 		TestComplex.testAddition();
 		TestComplex.testSubstraction();
 		TestComplex.testMultiplication();
-		
+
 		System.out.println("\nTest de la classe MatrixUtils:");
 		TestMatrixUtils.testTranspose();
 		TestMatrixUtils.testArrayEquals();
@@ -21,7 +21,7 @@ public class MainTest
 		System.out.println("\nTest de la classe FFT2D:");
 		TestFFT2D.testFft2d();
 		TestFFT2D.testReverseFft2d();
-		
+
 		System.out.println("\nTest de la classe ZeroPadding:");
 		TestZeroPadding.testZeroPadding();
 	}

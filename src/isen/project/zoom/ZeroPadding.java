@@ -22,9 +22,9 @@ public class ZeroPadding
 		Complex[][] paddedMatrix = new Complex[this.zoom * matrixLines][this.zoom * matrixColumns];
 
 		// Nombre de zéros contenus dans une ligne non nulle
-		int zerosLine = (this.zoom - 1) * matrixColumns;
+		int zerosLine = (this.zoom - 1) * matrixLines;
 		// Nombre de zéros contenus dans une colonne non nulle
-		int zerosColumn = (this.zoom - 1) * matrixLines;
+		int zerosColumn = (this.zoom - 1) * matrixColumns;
 
 		for (int i = 0; i < paddedMatrix.length; i++)
 		{

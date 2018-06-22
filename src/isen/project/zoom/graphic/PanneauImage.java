@@ -21,6 +21,8 @@ import isen.project.zoom.utility.Complex;
 
 public class PanneauImage extends JPanel
 {
+	private static final long serialVersionUID = 1L;
+
 	private BufferedImage image; // Pour stocker une image
 	private static final int Rouge = 0;
 	private static final int Vert = 1;

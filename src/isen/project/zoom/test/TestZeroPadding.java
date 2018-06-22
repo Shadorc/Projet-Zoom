@@ -21,6 +21,10 @@ public class TestZeroPadding
 			if(MatrixUtils.equalsMatrix(zeroPaddedMatrix, result)) 
 			{
 				System.out.println("Test zero padding : ok");
+				System.out.println("Matrice test: ");
+				MatrixUtils.printMatrix(testMatrix);
+				System.out.println("Résultat: ");
+				MatrixUtils.printMatrix(zeroPaddedMatrix);
 			}
 			else 
 			{

@@ -12,6 +12,7 @@ public class TestComplex
 		if (complex1.getReal() + complex2.getReal() == result.getReal() && complex1.getImaginary() + complex2.getImaginary() == result.getImaginary())
 		{
 			System.out.println("Test addition : ok");
+			System.out.println(complex1 + " + " + complex2 + " = " + result);
 		}
 		else
 		{
@@ -27,6 +28,7 @@ public class TestComplex
 		if (complex1.getReal() - complex2.getReal() == result.getReal() && complex1.getImaginary() - complex2.getImaginary() == result.getImaginary())
 		{
 			System.out.println("Test substraction : ok");
+			System.out.println(complex1 + " - " + complex2 + " = " + result);
 		}
 		else
 		{
@@ -44,6 +46,7 @@ public class TestComplex
 		if (real == result.getReal() && imaginary == result.getImaginary())
 		{
 			System.out.println("Test multiplication : ok");
+			System.out.println(complex1 + " x " + complex2 + " = " + result);
 		}
 		else
 		{

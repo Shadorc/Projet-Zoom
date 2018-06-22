@@ -23,6 +23,10 @@ public class TestFFT2D
 		if(MatrixUtils.equalsMatrix(result, fft2D.fft2d(testSignal))) 
 		{
 			System.out.println("Test fft2D : ok");
+			System.out.println("Signal test: ");
+			MatrixUtils.printMatrix(testSignal);
+			System.out.println("Résultat: ");
+			MatrixUtils.printMatrix(fft2D.fft2d(testSignal));
 		}
 		else
 		{
@@ -41,6 +45,10 @@ public class TestFFT2D
 		if(MatrixUtils.equalsMatrix(testSignal, fft2D.reverseFft2d(fft2D.fft2d(testSignal)))) 
 		{
 			System.out.println("Test reverse fft2D : ok");
+			System.out.println("Signal test: ");
+			MatrixUtils.printMatrix(testSignal);
+			System.out.println("Résultat: ");
+			MatrixUtils.printMatrix(fft2D.reverseFft2d(fft2D.fft2d(testSignal)));
 		}
 		else
 		{

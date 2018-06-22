@@ -1,7 +1,9 @@
 package isen.project.zoom.utility;
 
+import java.util.Arrays;
+
 public class MatrixUtils {
-	
+
 	/**
 	 * @return Une matrice correspondant à la transposée de {@code matrix}
 	 */
@@ -17,7 +19,7 @@ public class MatrixUtils {
 		}
 		return transposed;
 	}
-	
+
 	/**
 	 * @return {@code true} si les deux listes sont égales, {@code false} sinon
 	 */
@@ -36,7 +38,7 @@ public class MatrixUtils {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * @return {@code true} si les deux matrices sont égales, {@code false} sinon
 	 */
@@ -52,5 +54,14 @@ public class MatrixUtils {
 			}
 		}
 		return true;
+	}
+
+	/**
+	 * Affiche une matrice de complexes dans la console
+	 */
+	public static void printMatrix(Complex[][] matrix) {
+		for(int i = 0; i < matrix.length; i++) {
+			System.out.println(Arrays.toString(matrix[i]));
+		}
 	}
 }

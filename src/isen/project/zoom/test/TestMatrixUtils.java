@@ -15,6 +15,10 @@ public class TestMatrixUtils {
 		if(MatrixUtils.equalsMatrix(MatrixUtils.transpose(testMatrix), result))
 		{
 			System.out.println("Test transpose : ok");
+			System.out.println("Matrice test: ");
+			MatrixUtils.printMatrix(testMatrix);
+			System.out.println("Résultat: ");
+			MatrixUtils.printMatrix(MatrixUtils.transpose(testMatrix));
 		}
 		else 
 		{

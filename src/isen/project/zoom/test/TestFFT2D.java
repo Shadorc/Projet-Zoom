@@ -29,7 +29,8 @@ public class TestFFT2D
 			MatrixUtils.printMatrix(testSignal);
 			System.out.println("Résultat: ");
 			MatrixUtils.printMatrix(fft2D.fft2d(testSignal));
-		} else
+		}
+		else
 		{
 			System.err.println("Test fft2D : erreur");
 		}
@@ -51,7 +52,8 @@ public class TestFFT2D
 			MatrixUtils.printMatrix(testSignal);
 			System.out.println("Résultat: ");
 			MatrixUtils.printMatrix(fft2D.reverseFft2d(fft2D.fft2d(testSignal)));
-		} else
+		}
+		else
 		{
 			System.err.println("Test reverse fft2D : erreur");
 		}

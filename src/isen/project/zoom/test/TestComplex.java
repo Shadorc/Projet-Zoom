@@ -14,7 +14,8 @@ public class TestComplex
 		{
 			System.out.println("Test addition : ok");
 			System.out.println(complex1 + " + " + complex2 + " = " + result);
-		} else
+		}
+		else
 		{
 			System.err.println("Test addition : erreur");
 		}
@@ -30,7 +31,8 @@ public class TestComplex
 		{
 			System.out.println("Test substraction : ok");
 			System.out.println(complex1 + " - " + complex2 + " = " + result);
-		} else
+		}
+		else
 		{
 			System.err.println("Test substraction : erreur");
 		}
@@ -47,7 +49,8 @@ public class TestComplex
 		{
 			System.out.println("Test multiplication : ok");
 			System.out.println(complex1 + " x " + complex2 + " = " + result);
-		} else
+		}
+		else
 		{
 			System.err.println("Test multiplication : erreur");
 		}

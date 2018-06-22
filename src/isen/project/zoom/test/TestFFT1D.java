@@ -23,7 +23,8 @@ public class TestFFT1D
 			System.out.println("Test fft1D : ok");
 			System.out.println("Signal test: " + Arrays.toString(testSignal));
 			System.out.println("Résultat: " + Arrays.toString(result));
-		} else
+		}
+		else
 		{
 			System.err.println("Test fft1D : erreur");
 		}
@@ -42,7 +43,8 @@ public class TestFFT1D
 			System.out.println("Test reverse fft1D : ok");
 			System.out.println("Signal test: " + Arrays.toString(testSignal));
 			System.out.println("Résultat: " + Arrays.toString(result));
-		} else
+		}
+		else
 		{
 			System.err.println("Test reverse fft1D : erreur");
 		}

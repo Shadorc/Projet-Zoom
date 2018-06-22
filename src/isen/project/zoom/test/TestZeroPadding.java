@@ -26,7 +26,8 @@ public class TestZeroPadding
 			MatrixUtils.printMatrix(testMatrix);
 			System.out.println("Résultat: ");
 			MatrixUtils.printMatrix(zeroPaddedMatrix);
-		} else
+		}
+		else
 		{
 			System.err.println("Test zero padding : erreur");
 		}

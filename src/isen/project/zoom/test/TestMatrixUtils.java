@@ -21,7 +21,8 @@ public class TestMatrixUtils
 			MatrixUtils.printMatrix(testMatrix);
 			System.out.println("Résultat: ");
 			MatrixUtils.printMatrix(MatrixUtils.transpose(testMatrix));
-		} else
+		}
+		else
 		{
 			System.err.println("Test transpose : erreur");
 		}
@@ -34,7 +35,8 @@ public class TestMatrixUtils
 		if (MatrixUtils.equalsArray(testArray, testArray))
 		{
 			System.out.println("Test array equals : ok");
-		} else
+		}
+		else
 		{
 			System.err.println("Test array equals : erreur");
 		}
@@ -47,7 +49,8 @@ public class TestMatrixUtils
 		if (MatrixUtils.equalsMatrix(testMatrix, testMatrix))
 		{
 			System.out.println("Test matrix equals : ok");
-		} else
+		}
+		else
 		{
 			System.err.println("Test matrix equals : erreur");
 		}

@@ -15,7 +15,8 @@ public class FFT1D
 		if (signal.length == 1)
 		{
 			S = signal;
-		} else
+		}
+		else
 		{
 			Complex[] pairs = new Complex[signal.length / 2];
 			Complex[] impairs = new Complex[signal.length / 2];
@@ -24,7 +25,8 @@ public class FFT1D
 				if (i % 2 == 0)
 				{
 					pairs[i / 2] = signal[i];
-				} else
+				}
+				else
 				{
 					impairs[(i - 1) / 2] = signal[i];
 				}
@@ -71,7 +73,8 @@ public class FFT1D
 		if (signal.length == 1)
 		{
 			S = signal;
-		} else
+		}
+		else
 		{
 			Complex[] pairs = new Complex[signal.length / 2];
 			Complex[] impairs = new Complex[signal.length / 2];
@@ -80,7 +83,8 @@ public class FFT1D
 				if (i % 2 == 0)
 				{
 					pairs[i / 2] = signal[i];
-				} else
+				}
+				else
 				{
 					impairs[(i - 1) / 2] = signal[i];
 				}

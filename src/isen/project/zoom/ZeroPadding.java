@@ -41,12 +41,12 @@ public class ZeroPadding {
 				// Coin inférieur gauche
 				else if (i >= matrixLines/2+zerosColumn && j < matrixColumns/2)
 				{
-					paddedMatrix[i][j] = matrix[i-zerosColumn][j+matrixColumns/2];
+					paddedMatrix[i][j] = matrix[i-zerosColumn][j];
 				}
 				// Coin inférieur droit
 				else if (i >= matrixLines/2+zerosColumn && j >= matrixColumns/2+zerosLine)
 				{
-					paddedMatrix[i][j] = matrix[i-zerosColumn][j-zerosLine-matrixColumns/2];
+					paddedMatrix[i][j] = matrix[i-zerosColumn][j-zerosLine];
 				}
 				// Sinon, on remplit de zéros
 				else

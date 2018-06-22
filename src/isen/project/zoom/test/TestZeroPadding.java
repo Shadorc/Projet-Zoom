@@ -16,8 +16,8 @@ public class TestZeroPadding
 		Complex[][] result = new Complex[][] {{new Complex(1, 0), new Complex(0, 0), new Complex(0, 0), new Complex(2, 0)},
 			{new Complex(0, 0), new Complex(0, 0), new Complex(0, 0), new Complex(0, 0)},
 			{new Complex(0, 0), new Complex(0, 0), new Complex(0, 0), new Complex(0, 0)},
-			{new Complex(4, 0), new Complex(0, 0), new Complex(0, 0), new Complex(3, 0)}};
-
+			{new Complex(3, 0), new Complex(0, 0), new Complex(0, 0), new Complex(4, 0)}};
+			
 			if(MatrixUtils.equalsMatrix(zeroPaddedMatrix, result)) 
 			{
 				System.out.println("Test zero padding : ok");

@@ -52,8 +52,8 @@ public class FFT1D
 	 */
 	public Complex[] reverseFft1d(Complex[] signal)
 	{
-		Complex[] reverseFft = reverseFftWrong(signal);
-		final int length = reverseFft.length;
+		Complex[] reverseFft = reverseFft1dUndivided(signal);
+		final int length = signal.length;
 		for (int i = 0; i < length; i++)
 		{
 			reverseFft[i] = new Complex(reverseFft[i].getReal() / length, reverseFft[i].getImaginary() / length);
@@ -66,7 +66,7 @@ public class FFT1D
 	 *         inverse de tous les coefficients du signal multipliés par la taille
 	 *         du signal
 	 */
-	private Complex[] reverseFftWrong(Complex[] signal)
+	protected Complex[] reverseFft1dUndivided(Complex[] signal)
 	{
 		Complex[] S = new Complex[signal.length];
 
@@ -90,8 +90,8 @@ public class FFT1D
 				}
 			}
 
-			Complex[] P0 = reverseFft1d(pairs);
-			Complex[] P1 = reverseFft1d(impairs);
+			Complex[] P0 = reverseFft1dUndivided(pairs);
+			Complex[] P1 = reverseFft1dUndivided(impairs);
 
 			for (int k = 0; k < signal.length / 2; k++)
 			{

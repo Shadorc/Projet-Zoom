@@ -15,10 +15,19 @@ public class FFTCplx
 				imageZoomee[y][x] = new Complex(tableau[y][x], 0);
 			}
 		}
+
+		FFT2D fft2d = new FFT2D();
+		Complex[][] fft2dMatrix = fft2d.fft2d(imageZoomee);
+		Complex[][] paddedMatrix = new ZeroPadding(facteur).zeroPadding(fft2dMatrix);
+		Complex[][] reversedMatrix = fft2d.reverseFft2d(paddedMatrix);
 		
-		Complex[][] matrixFft2d = new FFT2D().fft2d(imageZoomee);
-		Complex[][] matrixPadded = new ZeroPadding(facteur).zeroPadding(matrixFft2d);
+		// Multiplie les amplitudes par le facteur au carré pour obtenir l'amplitude d'origine
+		for(int i = 0; i < reversedMatrix.length; i++) {
+			for(int j = 0; j < reversedMatrix[0].length; j++) {
+				reversedMatrix[i][j] = reversedMatrix[i][j].multiply(new Complex(facteur*facteur, 0));
+			}
+		}
 		
-		return new FFT2D().reverseFft2d(matrixPadded);
+		return reversedMatrix;
 	}
 }

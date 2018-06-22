@@ -93,26 +93,28 @@ public class PanneauImage extends JPanel
 	{
 		if (args.length != 0)
 		{
-			JFrame fenetre = new JFrame(); // Fabrique la fenètre
-			fenetre.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Quand on ferme la fenètre, l'application
-			// s'arrète
+			JFrame fenetre = new JFrame(); // Fabrique la fenêtre
+			fenetre.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Quand on ferme la fenêtre, l'application
+			// s'arrête
 			try
 			{
 				int niveauDeZoom = 2;
 				try
 				{
 					if (args.length >= 2)
+					{
 						niveauDeZoom = Integer.parseInt(args[1]);
+					}
 				}
 				catch (Exception e)
 				{
 				} // conserver 2 dans niveauDeZoom si le niveau de zoom n'a pas été fourni
 
 				PanneauImage panneauImage = new PanneauImage(args[0], niveauDeZoom); // Fabrique l'élément image
-				fenetre.getContentPane().add(panneauImage); // Ajoute l'élément image au contenu de la fenètre
-				fenetre.pack(); // Fixe la taille de la fenètre relativement à son contenu
-				fenetre.setLocationRelativeTo(null); // Place la fenètre au milieu de l'écran
-				fenetre.setVisible(true); // Affiche la fenètre
+				fenetre.getContentPane().add(panneauImage); // Ajoute l'élément image au contenu de la fenêtre
+				fenetre.pack(); // Fixe la taille de la fenêtre relativement à son contenu
+				fenetre.setLocationRelativeTo(null); // Place la fenêtre au milieu de l'écran
+				fenetre.setVisible(true); // Affiche la fenêtre
 			}
 			catch (Exception e)
 			{
@@ -121,3 +123,5 @@ public class PanneauImage extends JPanel
 		}
 	}
 }
+
+	

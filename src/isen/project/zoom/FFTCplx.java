@@ -15,6 +15,10 @@ public class FFTCplx
 				imageZoomee[y][x] = new Complex(tableau[y][x], 0);
 			}
 		}
-		return imageZoomee;
+		
+		Complex[][] matrixFft2d = new FFT2D().fft2d(imageZoomee);
+		Complex[][] matrixPadded = new ZeroPadding(facteur).zeroPadding(matrixFft2d);
+		
+		return new FFT2D().reverseFft2d(matrixPadded);
 	}
 }

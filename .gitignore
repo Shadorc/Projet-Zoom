@@ -1,3 +1,17 @@
-/bin/
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Eclipse project files
 .classpath
-.settings/org.eclipse.core.resources.prefs
+.project
+.settings
+
+# PDM files
+.eclipse-pmd
+
+# Windows thumbnail db
+Thumbs.db
